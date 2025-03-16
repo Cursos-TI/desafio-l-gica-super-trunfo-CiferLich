@@ -1,0 +1,59 @@
+#include <stdio.h>
+
+int main(){
+    char Carta = 'A';
+    char estado[50] = "A01";
+    char nomedacidade[50] = "Rio grande do sul";
+    int populacao = 11;
+    float area = 281.748;
+    float PIB = 640.23;
+    int numeropontosturisticos = 28;
+    float densidadepopulacional;
+    float PIBpercapital = PIB * 1000000000.0 / populacao;
+    densidadepopulacional = (float)populacao / area;
+    double superpoder = (numeropontosturisticos + PIBpercapital + PIB + PIBpercapital + area + populacao) - 1 / densidadepopulacional;
+
+    printf("Ola! Boa tarde, aqui abaixo esta o cadastro da primeira carta!\n");
+
+    printf("Carta1: \n", Carta);
+    printf("Estado: %s\n", estado);
+    printf("Nome da Cidade: %s\n", nomedacidade);
+    printf("Populacao: %.2d Milhoes de habitantes\n", populacao);
+    printf("Area: %.3f km\n", area);
+    printf("PIB: %.2f Reais\n", PIB);
+    printf("Numero de Pontos Turisticos: %d\n", numeropontosturisticos);
+    printf("Densidade Populacional: %.1f\n", densidadepopulacional);
+    printf("PIB per capita: %.3f Mil\n", PIBpercapital);
+    printf("Super Poder: %.2f\n", superpoder);
+
+    printf("--------------------------------------------\n");
+
+    char Carta2 = 'B';
+    char estado2[50] = "B02";
+    char nomedacidade2[50] = "Rio de Janeiro";
+    int populacao2 = 6;
+    float area2 = 1.200;
+    float PIB2 = 949.3;
+    int numeropontosturisticos2 = 12;
+    int densidadepopulacional2;
+    float PIBpercapita2 = PIB * 1000000000.0 / populacao2;
+    densidadepopulacional2 = (float)populacao2 / area2;
+    double superpoder2 = (numeropontosturisticos2 + PIBpercapita2 + PIB2 + PIBpercapita2 + area2 + populacao2) - 1 / densidadepopulacional2;
+
+    densidadepopulacional2 = (float)populacao2 / area2;
+
+    printf("Agora, o cadastro da segunda carta!\n");
+
+    printf("Carta2: \n", Carta2);
+    printf("Estado: %s\n", estado2);
+    printf("Nome da Cidade: %s\n", nomedacidade2);
+    printf("Populacao: %.2d Milhoes de habitantes\n", populacao2);
+    printf("Area: %.3f km\n", area2);
+    printf("PIB: %.2f Reais\n", PIB2);
+    printf("Numero de Pontos Turisticos: %d\n", numeropontosturisticos2);
+    printf("Densidade Populacional: %.1d km\n", densidadepopulacional2);
+    printf("PIB per capita: %.3f Mil\n", PIBpercapita2);
+    printf("Super Poder: %.2f\n", superpoder2);
+
+    return 0;
+}
